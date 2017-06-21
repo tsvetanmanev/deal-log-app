@@ -1,0 +1,54 @@
+<div>
+  <form action="/records/add" method="POST" class="form-horizontal">
+    <div class="form-group">
+      <label for="opportunityId" class="col-md-1 control-label">OPE ID</label>
+      <div class="col-md-4">
+        <input class="form-control" type="text" name="opportunityId" id="opportunityId">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="approvalId" class="col-md-1 control-label">APE ID</label>
+      <div class="col-md-4">
+        <input class="form-control" type="text" name="approvalId" id="approvalId">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="subregion">Subregion</label>
+      <select name="subregion" id="subregion">
+        <option value="GWE">GWE</option>
+        <option value="UKI">UKI</option>
+        <option value="Germany">Germany</option>
+        <option value="Italy">Italy</option>
+        <option value="Iberia">Iberia</option>
+        <option value="France">France</option>
+        <option value="MEMA">MEMA</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="type">SOAR type</label>
+      <select name="type" id="type">
+        <option value="OA">OA</option>
+        <option value="BA">BA</option>
+        <option value="TC">Ts&Cs</option>
+        <option value="OA">Scope Change</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="TCV">TCV</label>
+      <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input class="form-control" type="number" name="TCV" id="TCV">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="margin">Margin</label>
+      <div class="input-group">
+        <input class="form-control" type="number" name="margin" id="margin" max="100">
+        <span class="input-group-addon">%</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-default">Add</button>
+    </div>
+  </form>
+</div>

@@ -1,5 +1,11 @@
+const dataList = require('../utilities/dataList')
+
 module.exports = {
   addGet: (req, res) => {
-    res.render('records/add')
+    let subregions = dataList.subregions
+
+    res.render('records/add', {
+      subregions: subregions
+    })
   }
 }

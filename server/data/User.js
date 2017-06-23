@@ -1,4 +1,6 @@
 const mongoose = require('mongoose')
+const ObjectId = mongoose.SchemaTypes.ObjectId
+
 const encryption = require('../utilities/encryption')
 
 const REQUIRED_VALIDATION_MESSAGE = '{PATH} is required'
@@ -9,7 +11,8 @@ let userSchema = new mongoose.Schema({
   lastName: { type: String, required: REQUIRED_VALIDATION_MESSAGE },
   salt: String,
   hashedPass: String,
-  roles: [String]
+  roles: [String],
+  createdSoars: [{ type: ObjectId, ref: 'Soar' }]
 })
 
 userSchema.method({

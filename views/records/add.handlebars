@@ -27,9 +27,9 @@
         </div>
       </div>
       <div class="form-group">
-        <label for="type" class="col-sm-4 control-label">SOAR type</label>
+        <label for="soarType" class="col-sm-4 control-label">SOAR type</label>
         <div class="col-sm-8">
-          <select name="type" id="type">
+          <select name="soarType" id="soarType">
           <option value="OA">OA</option>
           <option value="BA">BA</option>
           <option value="TC">Ts&Cs</option>
@@ -38,11 +38,11 @@
         </div>
       </div>
       <div class="form-group">
-        <label for="TCV" class="col-sm-4 control-label">TCV</label>
+        <label for="totalValue" class="col-sm-4 control-label">TCV</label>
         <div class="col-sm-6">
           <div class="input-group">
             <span class="input-group-addon">$</span>
-            <input class="form-control" type="number" name="TCV" id="TCV">
+            <input class="form-control" type="number" name="totalValue" id="totalValue">
           </div>
         </div>
       </div>
@@ -110,6 +110,60 @@
           </div>
         </div>
       </div>
+      <div class="form-group">
+        <label for="rescheduled" class="col-sm-4 control-label">Rescheduled</label>
+        <div class="col-sm-8">
+          <select name="rescheduled" id="rescheduled">
+            <option value="No">No</option>
+            <option value="1">1 days</option>
+            <option value="2">2 days</option>
+            <option value="3">3 days</option>
+            <option value="4">4 days</option>
+            <option value=">4">>4 days</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="soarQuality" class="col-sm-4 control-label">SOAR Quality</label>
+        <div class="col-sm-8">
+          <select name="soarQuality" id="soarQuality">
+            <option value="G">G</option>
+            <option value="I">I</option>
+            <option value="B">B</option>
+            <option value="N/A">N/A</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="reqQuality" class="col-sm-4 control-label">Request quality</label>
+        <div class="col-sm-8">
+          <select name="reqQuality" id="reqQuality">
+            <option value="G">G</option>
+            <option value="I">I</option>
+            <option value="B">B</option>
+            <option value="N/A">N/A</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="docQuality" class="col-sm-4 control-label">Documents quality</label>
+        <div class="col-sm-8">
+          <select name="docQuality" id="docQuality">
+            <option value="G">G</option>
+            <option value="I">I</option>
+            <option value="B">B</option>
+            <option value="N/A">N/A</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="numOfSOARs" class="col-sm-4 control-label">Number of SOARs</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="number" name="numOfSOARs" id="numOfSOARs" min="1" max="10" value="1">
+        </div>
+      </div>
+
+
     </div>
     <div class="col-sm-12">
       <div class="form-group">

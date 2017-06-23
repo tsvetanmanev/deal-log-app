@@ -1,0 +1,20 @@
+<table class="table">
+  <tr>
+    <th>Project name</th>
+    <th>Opportunity ID</th>
+    <th>Approval ID</th>
+    <th>Country</th>
+    <th>SOAR Type</th>
+    <th>Total Value</th>
+  </tr>
+  {{#each soars}}
+  <tr>
+    <td>{{this.projectName}}</td>
+    <td>{{this.opportunityId}}</td>
+    <td>{{this.approvalId}}</td>
+    <td>{{this.country}}</td>
+    <td>{{this.soarType}}</td>
+    <td>{{this.totalValue}}</td>
+  </tr>
+  {{/each}}
+</table>

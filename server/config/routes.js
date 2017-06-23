@@ -12,6 +12,9 @@ module.exports = (app) => {
   app.post('/users/logout', controllers.users.logout)
 
   app.get('/records/add', auth.isAuthenticated, controllers.records.addGet)
+  app.post('/records/add', auth.isAuthenticated, controllers.records.addPost)
+
+  app.get('/records/list', controllers.records.listGet)
 
   app.all('*', (req, res) => {
     res.status(404)

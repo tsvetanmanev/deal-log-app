@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const User = require('../data/User')
+require('../data/Soar')
 
 mongoose.Promise = global.Promise
 
